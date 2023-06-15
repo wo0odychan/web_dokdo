@@ -1,0 +1,265 @@
+/* 변수쓰기 */
+:root {
+    --mc: #09847f;
+    --sc: #b4613d;
+    --lc: #dddddd;
+    --wc: #ffffff;
+    --dc: #333;
+}
+
+.inner {
+    max-width: 1440rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+.wrap {}
+
+
+/* 헤더 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.header.on {
+    background: var(--wc);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120rem;
+    color: var(--mc);
+
+    transition: height 0.5s;
+}
+
+.header.on .header_wrap {
+    height: 80rem;
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header h1 img {
+    height: 39rem;
+}
+
+.header.on h1 img:last-child {
+    filter: invert();
+}
+
+/* 메뉴 */
+.gnb {}
+
+.gnb .menu {
+    display: flex;
+}
+
+.gnb .menu>li {
+    position: relative;
+    padding: 0 30px;
+}
+
+.gnb .menu a {
+    display: block;
+    color: var(--wc);
+    font-size: 18rem;
+    line-height: 120rem;
+}
+
+.header.on .gnb .menu a {
+    color: var(--dc);
+}
+
+/* 서브메뉴(다단메뉴) */
+.gnb .sub {
+    position: absolute;
+    top: 130rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: var(--wc);
+    width: 180rem;
+    text-align: center;
+    box-shadow: 15px 20px 30px rgba(17, 17, 17, 0.1);
+    padding: 15rem 0;
+    border-radius: 20rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.header.on .gnb .menu li:hover .sub {
+    top: 80rem;
+}
+
+.gnb .menu li:hover .sub {
+    top: 100rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.gnb .sub li~li {}
+
+.gnb .sub a {
+    display: block;
+    color: var(--dc);
+    font-size: 15rem;
+    line-height: 40rem;
+}
+
+
+/* 로그인 */
+.login_area .member {
+    display: flex;
+    gap: 30px;
+}
+
+.login_area .member a {
+    font-size: 15rem;
+    color: var(--wc);
+}
+
+.login_area .member li~li {
+    position: relative;
+}
+
+.login_area .member li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15rem;
+    width: 2px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    background: var(--wc);
+}
+
+.header.on .login_area .member a {
+    color: var(--dc);
+}
+
+.header.on .login_area .member li~li::before {
+    background: var(--dc);
+}
+
+
+/* 메인 */
+/* 메인 비쥬얼 스와이퍼 */
+.main_visual {
+    height: 100vh;
+}
+
+.main_slide .itm {
+    font-size: 100rem;
+    transition: 0.5s;
+}
+
+.main_slide .itm.on {
+    font-size: 200rem;
+}
+
+.main_visual .main_slide .itm01 {
+    height: 100vh;
+    background: url(../images/img_visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+    height: 100vh;
+    background: url(../images/img_visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    transform: translate(-50%, -50%);
+    max-width: 1600rem;
+    width: 100%;
+}
+
+.main_visual .arrows i {
+    position: absolute;
+    top: 0;
+}
+
+.main_visual .arrows .left {
+    left: 10rem;
+}
+
+.main_visual .arrows .right {
+    right: 10rem;
+}
+
+.main_visual .arrows i::before {
+    font-size: 40rem;
+    color: var(--wc);
+    padding: 25rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.main_visual .slide_dots li.on button {
+    font-size: 100rem;
+}
+
+.cicle {
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    width: 500px;
+    height: 500px;
+    background: #b4613d;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.cicle span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 250px;
+    width: 3px;
+    background: #fff;
+}
+
+.cicle span::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50px;
+    height: 50px;
+    background: #09847f;
+    border-radius: 50%;
+}
+
+.cicle span:nth-child(1) {
+    transform: translate(-50%, 0) rotate(0deg);
+    transform-origin: center bottom;
+}
+
+
+
+
+
+
+
+
+.footer {
+    height: 100vh;
+}

@@ -7,6 +7,7 @@
     <title>독도 따라만들기</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/style.css?ver=1.0">
 
@@ -26,6 +27,7 @@
                 <h1><a href="/"><img src="./images/logo_simbol.svg" alt=""><img src="./images/logo_tx.svg" alt=""></a>
                 </h1>
                 <nav class="gnb">
+                    <h2 class="blind">메뉴</h2>
                     <ul class="menu">
                         <li><a href="">전시관 소개</a>
                             <ul class="sub">
@@ -70,47 +72,138 @@
         <!-- 메인 -->
         <main>
             <section class="main_visual">
+                <h2 class="blind">메인 컨텐츠 소개</h2>
                 <div class="main_slide swiper">
                     <div class="swiper-wrapper">
-                        <!-- swiper-slide-active라는 스와이퍼 적용 시 붙는 class가 존재함 ↓-->
-                        <div class="swiper-slide itm01 itm">1</div>
-                        <div class="swiper-slide itm02 itm">2</div>
-                        <!-- 그래서 css로 slideActiveClass: 'on' 적용해서 class를 on으로 바꿈 -->
+                        <div class="swiper-slide itm01 itm">
+                            <div class="slide-image" data-swiper-parallax='45%'></div>
+                            <div class="content">
+                                <div class="img_box">
+                                    <img src="./images/visual_tx.svg" alt="">
+                                </div>
+                                <p>독도에 대한 의미를 되새기는 특별한 공간,<br />독도의 삶과 역사를 잊지 않기 위해 독도 전시관이 앞장서겠습니다.</p>
+                                <a href="" class="btn wc">전시안내보기<i class="bi bi-caret-right-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm02 itm">
+                            <div class="slide-image" data-swiper-parallax='45%'></div>
+                            <div class="content">
+                                <div class="img_box">
+                                    <img src="./images/visual_tx.svg" alt="">
+                                </div>
+                                <p>독도에 대한 의미를 되새기는 특별한 공간,<br />독도의 삶과 역사를 잊지 않기 위해 독도 전시관이 앞장서겠습니다.</p>
+                                <a href="" class="btn wc">전시안내보기<i class="bi bi-caret-right-fill"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="arrows">
                     <i class="bi bi-chevron-left left"></i>
                     <i class="bi bi-chevron-right right"></i>
                 </div>
-                <ul class="slide_dots">
-                    <li><button>01</button></li>
-                    <li><button>02</button></li>
-                </ul>
+                <div class="btn_cicle">
+                    <a href="" class="case">
+                        <span>단체예약<br />신청</span>
+                    </a>
+                </div>
+            </section>
 
-                <div class="num">
-                    <span>현재 슬라이드 번호</span> / <strong>총 갯수</strong>
+
+            <section class="main_content section _se_">
+                <h2 class="blind">메인 콘텐츠</h2>
+                <div class="inner content">
+                    <div class="left">
+                        <h3>독도 바로알기</h3>
+                        <p>독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+                            수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.</p>
+                        <a href="" class="btn mc">바로가기
+                            <i class="bi bi-caret-right-fill"></i></a>
+                    </div>
+                    <div class="right">
+                        <h3>관람안내</h3>
+                        <div class="desc">
+                            <i class="bi bi-caret-right-fill"></i>
+                            <a href="tel:044-999-6393" class="tel">044-999-6393</a>
+                            <a href="" class="btn2">관람 문의하기</a>
+                        </div>
+                        <ul class="list_dots list">
+
+                            <li><strong>관람시간</strong>
+                                <p>화요일-토요일 9:00 ~ 17:00<br />
+                                    (점심시간 12:00~13:00, 입장마감 16:30)<br />
+                                    <span>※ 관람시간은 학교 사정에 따라 변경될 수 있습니다.</span>
+                                </p>
+                            </li>
+                            <li><strong>휴관안내</strong>
+                                <p>일요일, 월요일 및 공휴일</p>
+                            </li>
+                            <li><strong class="ls2">위치</strong>
+                                <p>세종특별자치시 새롬서로 68 새롬고등학교 1층</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+    </div>
+
+
+    </section>
+    <section class="main_notice _se_">
+        <div class="inner content">
+            <div class="left">
+                <h2>공지사항</h2>
+                <p>독도의 미래를 생각하는 공간으로<br />
+                    앞으로도 지속적으로 활용되기를 바랍니다.</p>
+                <div class="arrows">
+                    <i class="bi bi-chevron-left"></i>
+                    <i class="bi bi-chevron-right"></i>
                 </div>
 
-                <div class="cicle">
-                    <span></span>
-                    <span></span>
+            </div>
+            <div class="right">
+                <div class="swiper notice_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <a href="">
+                                <div class="img_box"><img src="./images/img_visual01.jpg" alt=""></div>
+                                <div class="new btn3">NEW</div>
+                                <strong>2023학년도 독도전시관 상반기 독도체험교실 안내</strong>
+                                <p class="desc">2023학년도 상반기 독도체험교실을 다음과 같이 실시합니다.
+                                    □ 행사안내
+                                    ◦ (기 간) 2023. 4. 4.(화) ~ 6. 16.(금)
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <a href="">
+                                <div class="img_box"><img src="./images/img_visual02.jpg" alt=""></div>
+                                <div class="new btn3">NEW</div>
+                                <strong>2023학년도 독도전시관 상반기 독도체험교실 안내</strong>
+                                <p class="desc">2023학년도 상반기 독도체험교실을 다음과 같이 실시합니다.
+                                    □ 행사안내
+                                    ◦ (기 간) 2023. 4. 4.(화) ~ 6. 16.(금)
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-            </section>
 
-            <section class="">
-                <div class=" inner"></div>
-            </section>
 
-            <section class="">
-                <div class="inner"></div>
-            </section>
 
-        </main>
-        <!-- 푸터 -->
-        <footer class="footer">
 
-        </footer>
+
+    </section>
+
+    </main>
+    <!-- 푸터 -->
+    <footer class="footer">
+
+    </footer>
     </div>
 </body>
 
