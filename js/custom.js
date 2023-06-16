@@ -47,4 +47,12 @@ $(function () {
             disableOnInteraction: false,
         },
     });
+
+    $('.main_notice .arrows .left').on('click', function () {
+        noticeSlide.slidePrev();
+    });
+    $('.main_notice .arrows .right').on('click', function () {
+        noticeSlide.slideNext();
+    });
+
 })
