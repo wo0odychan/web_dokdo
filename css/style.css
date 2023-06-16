@@ -31,6 +31,11 @@
     overflow: hidden;
     background: var(--dc);
     color: var(--wc);
+    transition: .5s;
+}
+
+.btn2:hover {
+    background: #111;
 }
 
 .btn3 {
@@ -76,16 +81,39 @@
 }
 
 .btn.mc {
+    position: relative;
     color: var(--mc);
     border: 3px solid var(--mc);
 }
 
-.list_dot>* {
+.btn.mc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: -1;
+    background: var(--mc);
+    transition: .5s;
+}
+
+.btn.mc:hover::before {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn.mc:hover {
+    color: var(--wc);
+}
+
+.list_dots>* {
     position: relative;
     padding: 0 0 0 15rem;
 }
 
-.list_dot>*::before {
+.list_dots>*::before {
     content: "";
     position: absolute;
     top: 7rem;
@@ -94,6 +122,7 @@
     height: 2rem;
     background: var(--mc);
 }
+
 
 .section {
     padding: 100rem 0;
@@ -529,6 +558,11 @@
     font-weight: 300;
     line-height: 20rem;
     margin: 0 0 57rem 0;
+}
+
+
+.main_content .content .right span {
+    color: #aaa;
 }
 
 .main_content .content .right .desc {
