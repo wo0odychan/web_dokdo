@@ -18,6 +18,32 @@ $(function () {
         })
     });
 
+    $('.mobil_btn').on('click', function () {
+        $('.gnb').toggleClass('on');
+        $('.header').toggleClass('oo')
+    });
+
+    $('.gnb .menu>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).next().stop().slideToggle();
+            // 메뉴 리스트 덮어버리기//
+            $(this).parent().siblings().find('.sub').stop().slideUp();
+        }
+
+    });
+
+    $(window).on('resize', function () {
+        $('.gnb').removeClass('on')
+    });
+
+    $('.gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+
+    })
+
     // 스와이퍼를 써 보아요! //
     const mainSlide = new Swiper('.main_slide', {
         loop: true,
@@ -28,6 +54,7 @@ $(function () {
             disableOnInteraction: false,
         },
         slideActiveClass: 'on',
+
     });
 
     $('.main_visual .arrows .left').on('click', function () {
@@ -40,12 +67,17 @@ $(function () {
 
     const noticeSlide = new Swiper('.notice_slide', {
         loop: true,
-        slidesPerView: 2,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 0,
         autoplay: {
-            delay: 1000,
+            delay: 2500,
             disableOnInteraction: false,
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            }
+        }
     });
 
     $('.main_notice .arrows .left').on('click', function () {
