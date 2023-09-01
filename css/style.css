@@ -1000,6 +1000,29 @@
         padding: 0 15rem;
     }
 
+    .btn2 {
+        display: inline-block;
+        font-size: 16rem;
+        padding: 10rem 20rem;
+        border-radius: 15rem;
+        overflow: hidden;
+        background: var(--dc);
+        color: var(--wc);
+        transition: .5s;
+    }
+
+    .btn.mc {
+        position: relative;
+        color: var(--mc);
+        background: var(--wc);
+        border: 3px solid var(--mc);
+        transition: 0.4s;
+    }
+
+    .btn.mc:hover {
+        color: var(--mc);
+    }
+
 
     .list_dots>* {
         position: relative;
@@ -1050,14 +1073,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 120rem;
+        height: 100rem;
         color: var(--mc);
 
         transition: height 0.5s;
     }
 
     .header.on .header_wrap {
-        height: 120rem;
+        height: 100rem;
     }
 
     .header h1 {
@@ -1067,7 +1090,7 @@
     }
 
     .header h1 img {
-        height: 39rem;
+        height: 32rem;
     }
 
     .header.oo h1 img:last-child {
@@ -1201,7 +1224,7 @@
     }
 
     .main_slide {
-        border-radius: 0 0 30rem 0;
+        border-radius: 0 0 80rem 0;
         overflow: hidden;
     }
 
@@ -1379,7 +1402,7 @@
 
     .main_visual .btn_cicle {
         position: absolute;
-        bottom: -100rem;
+        bottom: -50rem;
         right: 30rem;
         z-index: 999;
         z-index: 1;
@@ -1390,11 +1413,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 150rem;
-        height: 150rem;
+        width: 130rem;
+        height: 130rem;
         background: var(--mc);
         color: var(--wc);
-        font-size: 20rem;
+        font-size: 18rem;
         border-radius: 50%;
         text-align: center;
         line-height: 26rem;
@@ -1429,6 +1452,7 @@
     }
 
     .main_content .content .left {
+        overflow: hidden;
         position: relative;
         border-radius: 10rem;
         background: var(--gc);
@@ -1500,14 +1524,16 @@
 
     .main_content .content .right .desc i {
         background: var(--gc);
-        padding: 15rem 16rem;
+        padding: 10rem 11rem;
         border-radius: 50%;
-        font-size: 30rem;
+        font-size: 20rem;
+        margin: 0 4px 0 0;
     }
 
     .main_content .content .right .desc .tel {
-        font-size: 35rem;
+        font-size: 24rem;
         font-weight: 700;
+        width: 100%;
     }
 
 
@@ -1631,7 +1657,7 @@
 
     .main_banner .content a {
         display: block;
-        padding: 40rem 50rem;
+        padding: 40rem 30rem;
     }
 
     .main_banner .content h3 {
@@ -1641,8 +1667,8 @@
     }
 
     .main_banner .content p {
-        font-size: 15rem;
-        line-height: 21rem;
+        font-size: 14rem;
+        line-height: 24rem;
     }
 
     .main_banner .content li {
@@ -1654,10 +1680,10 @@
         content: "";
         position: absolute;
         right: 30rem;
-        top: 50%;
+        top: 30%;
         transform: translate(0, -50%);
-        width: 100rem;
-        height: 100rem;
+        width: 60rem;
+        height: 50rem;
         background: url(../images/icon_experience.svg) no-repeat center;
     }
 
@@ -1708,7 +1734,7 @@
         top: 330rem;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 30rem;
+        font-size: 20rem;
         font-weight: 500;
         font-family: 'Noto Serif KR';
         color: var(--dc);
@@ -1723,7 +1749,7 @@
 
 
         width: 100%;
-        height: 40rem;
+        height: 22rem;
         color: var(--gc);
         white-space: nowrap;
         overflow: hidden;
@@ -1760,9 +1786,9 @@
 
     .footer .top .dots .east {
         position: absolute;
-        top: -65rem;
+        top: 75rem;
         left: 0;
-        margin: 0 0 0 -320rem;
+        margin: 0 0 0 -150rem;
     }
 
     .footer .top .dots .west {
@@ -1883,11 +1909,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 150rem;
-        height: 150rem;
+        width: 130rem;
+        height: 130rem;
         background: var(--sc);
         color: var(--wc);
-        font-size: 20rem;
+        font-size: 18rem;
         border-radius: 50%;
         text-align: center;
         line-height: 26rem;
@@ -1913,7 +1939,7 @@
         display: block;
 
         position: fixed;
-        top: 35rem;
+        top: 30rem;
         right: 30rem;
         z-index: 999;
         color: var(--dc);

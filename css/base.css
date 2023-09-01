@@ -61,6 +61,7 @@ body {
     font-size: 16rem;
     font-family: 'Noto Sans KR', 'Roboto', 'Noto Serif KR', sans-serif;
     line-height: 1;
+    word-break: keep-all;
 }
 
 h1,
