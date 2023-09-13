@@ -1936,9 +1936,8 @@
     }
 
     .mobil_btn {
-        display: block;
-
         position: fixed;
+        display: block;
         top: 30rem;
         right: 30rem;
         z-index: 999;

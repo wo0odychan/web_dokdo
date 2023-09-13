@@ -20,7 +20,7 @@ $(function () {
 
     $('.mobil_btn').on('click', function () {
         $('.gnb').toggleClass('on');
-        $('.header').toggleClass('oo')
+        $('.header').toggleClass('on')
     });
 
     $('.gnb .menu>li>a').on('click', function (e) {
